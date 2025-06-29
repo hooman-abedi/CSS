@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complex flexbox</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Roboto, sans-serif;
+
+        }
+        header{
+            background-color: lightpink;
+            height: 140px;
+
+
+        }
+        h1{
+            text-align: center;
+            color: darkblue;
+            margin: 0;
+            line-height: 100px;
+
+        }
+        article{
+
+            text-align: center;
+            margin: 10px;
+            background-color: lightgreen;
+            flex: 1 200px;
+
+        }
+        section{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 10px;
+            margin-right: 10px;
+
+
+
+        }
+        button{
+            margin-top: 10px;
+        }
+        nav{
+
+
+
+        }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+        li>a:hover{
+            color: white;
+            background-color: black;
+        }
+        .lii{
+            align-items: center;
+            width: 70%;
+            max-width: 70%;
+            margin: 0;
+            height: 100px;
+            background-color: skyblue;
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+        .a{
+            flex: 1 200px;
+        }
+
+        .secnav{
+            max-width: 60%;
+            display: flex;
+            flex-direction: row;
+            background-color: indianred;
+            list-style: none;
+            padding: 0;
+        }
+
+
+        .secnav li{
+            flex: 1 200px;
+        }
+        .secnav li:nth-child(5){
+            flex: 1 100px;
+        }
+        .secnav li:nth-child(2){
+            flex: 1 100px;
+        }
+
+
+
+
+
+    </style>
+
+</html>
+<body>
+<header>
+    <h1>Complex Flex Box Layout</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Quick Links</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <article class = aaa>
+        <h2>First Article</h2>
+        <p>Paragraph 1</p>
+    </article>
+    <article class = aaa>
+        <h2>Second Article</h2>
+        <p>Paragraph 2</p>
+    </article>
+    <article class = aaa>
+        <div>
+            <button>smile</button>
+            <button>shrink</button>
+            <button>mood</button>
+            <button>angry</button>
+        </div>
+        <div><p>Para 1</p></div>
+        <div><p>Para 2</p></div>
+    </article>
+
+</section>
+<ul class = lii>
+    <li class="a">Small text: I am a student of GBC College</li>
+    <li class="a">Medium text: I am a student of GBC College</li>
+    <li class="a">Large text: I am a student of GBC College,
+        : I am a student of GBC College,
+        : I am a student of GBC College</li>
+</ul>
+<ul class = secnav>
+    <li class ="b">GBC1</li>
+    <li class ="b">GBC2</li>
+    <li class ="b">GBC3</li>
+    <li class ="b">GBC1</li>
+    <li class ="b">GBC2</li>
+    <li class ="b">GBC3</li>
+    <li class ="b">GBC1</li>
+    <li class ="b">GBC2</li>
+    <li class ="b">GBC3</li>
+</ul>
+</body>
